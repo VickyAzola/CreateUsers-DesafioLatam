@@ -13,6 +13,9 @@ Este proyecto es una aplicación web de gestión de usuarios utilizando Vue.js y
 
 ![Sin títulofsd](https://github.com/user-attachments/assets/60017db5-dd6a-4c6a-ae16-37eb711e293e)
 
+Mediante **Firebase Hosting** se creo una página [revisala aquí](https://crear-usuarios-4131d.web.app/)
+
+
 ## Tecnologías Utilizadas
 
 - **HTML5**: Para la estructura del sitio web.
