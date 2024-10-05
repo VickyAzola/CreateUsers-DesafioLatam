@@ -5,11 +5,15 @@ import { $db } from '@/firebaseConfig.js'
 
 export const useUserStore = defineStore('user', () => {
   const users = ref([])
+  //collection -> todos los registros (lista de docs)
+  const usersRef = collection($db, 'usuarios')
 
   async function fetchData() {
     try {
-      const usersRef = collection($db, 'usuarios')
       onSnapshot(usersRef, (encontrado) => {
+        //docs -> arreglo de todos los documentos en onSnapshot 
+        //permite poder acceder a doc usando map
+        //doc -> solo 1 documento de la collection
         users.value = encontrado.docs.map((doc) => ({id: doc.id, ...doc.data()}))
       })
     } catch(error) {
@@ -19,20 +23,21 @@ export const useUserStore = defineStore('user', () => {
 
   async function addUser(data) {
     try {
-      const usersRef = collection($db, 'usuarios')
       await addDoc(usersRef, { nombre: data.nombre, correo: data.correo })
-      
     } catch (error) {
       console.log('Error adding document:', error)
+      alert('No se pudo crear un nuevo usuario')
     }
   }
 
   async function removeUser(id) {
     try {
-      const usersRef = doc($db, 'usuarios', id)
-      await deleteDoc(usersRef)
+      //doc -> busca un documento en especifico
+      const userRef = doc($db, 'usuarios', id)
+      await deleteDoc(userRef)
     } catch (error) {
       console.error(error)
+      alert('No se pudo eliminar el usuario')
     }
   }
 
