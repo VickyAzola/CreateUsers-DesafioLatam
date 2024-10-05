@@ -1,35 +1,56 @@
-# crearUsuarios
+# Gestión de Usuarios con Vue.js y Firebase
 
-This template should help get you started developing with Vue 3 in Vite.
+## Tabla de Contenidos
 
-## Recommended IDE Setup
+- [Descripción](#descripción)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Instalación](#instalación)
+- [Autores](#autores)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Descripción
 
-## Customize configuration
+Este proyecto es una aplicación web de gestión de usuarios utilizando Vue.js y Firebase Firestore como base de datos. Los usuarios pueden agregar nuevos registros y eliminarlos, todo en tiempo real gracias a la sincronización con Firestore.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+![Sin títulofsd](https://github.com/user-attachments/assets/60017db5-dd6a-4c6a-ae16-37eb711e293e)
 
-## Project Setup
+## Tecnologías Utilizadas
 
-```sh
-npm install
-```
+- **HTML5**: Para la estructura del sitio web.
+- **CSS**: Para el diseño y la presentación del sitio web.
+- **Vue.js**: Framework de JavaScript para construir interfaces de usuario.
+- **Pinia**: Para menejar el estado de la aplicación Vue.js.
+- **Firebase Firestore**: Base de datos NoSQL en la nube para almacenar y sincronizar datos.
 
-### Compile and Hot-Reload for Development
+## Instalación
 
-```sh
-npm run dev
-```
+Sigue los siguientes pasos para instalar y ejecutar el proyecto en tu entorno local:
 
-### Compile and Minify for Production
+1. Clona el repositorio:
 
-```sh
-npm run build
-```
+    ```bash
+    git clone https://github.com/VickyAzola/CreateUsers-DesafioLatam.git
+    ```
 
-### Lint with [ESLint](https://eslint.org/)
+2. Navega al directorio del proyecto:
 
-```sh
-npm run lint
-```
+    ```bash
+    cd CreateUsers-DesafioLatam
+    ```
+
+3. Instala las dependencias necesarias:
+
+    ```bash
+    npm install
+    ```
+
+4. Inicia el servidor de desarrollo:
+
+    ```bash
+    npm run dev
+    ```
+
+5. Abre el enlace 'Local' en tu navegador para ver la aplicación en funcionamiento.
+
+## Autores
+
+- **Desarrollador Principal y Diseñador**: [Victoria Azola Silva](https://github.com/VickyAzola) - Responsable del desarrollo del código.
